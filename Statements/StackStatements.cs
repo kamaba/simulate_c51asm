@@ -13,9 +13,13 @@ using System.Text;
 
 namespace SimpleAsm.Statements
 {
-    public class AddressOpStatements : Statements
+    public enum EAddrOp
     {
-        public AddressOpStatements()
+        Org,
+    }
+    public class AddressOpStatements : StatementsBase
+    {
+        public AddressOpStatements(EAddrOp eAddrOp, ValueData vd )
         {
 
         }
